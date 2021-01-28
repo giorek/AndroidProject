@@ -1,0 +1,15 @@
+1、工程增加kotlin依赖
+    buildscript {
+        ext.kotlin_version = '1.4.30-RC'
+        dependencies {
+            classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        }
+    }
+
+2、模块增加Kotlin依赖
+    dependencies {
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    }
+
+
+

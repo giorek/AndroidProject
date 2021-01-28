@@ -1,0 +1,54 @@
+1、app模块目录
+    /app
+        /libs
+        /src
+            /test
+            /main
+                /java
+                    /package_name
+                /res
+                    /drawable
+                    /layout
+                    /mipmap
+                    /values
+                /jni
+                /gen
+                /assets
+                /AndroidManifest.xml
+                    
+        
+2、资源目录/res (https://developer.android.com/guide/topics/resources/providing-resources?hl=zh-cn)
+    /res
+        /animator   用于定义属性动画的 XML 文件
+        /anim       用于定义渐变动画的 XML 文件
+        /color      用于定义颜色状态列表的 XML 文件  https://developer.android.com/guide/topics/resources/color-list-resource?hl=zh-cn
+        /drawable   
+                    https://developer.android.com/guide/topics/resources/drawable-resource?hl=zh-cn
+                    位图文件（.png、.9.png、.jpg、.gif）/XML 文件
+                    位图文件
+                    九宫格（可调整大小的位图）
+                    状态列表
+                    形状
+                    动画可绘制对象
+                    其他可绘制对象
+        /mipmap     
+                    适用于不同启动器图标密度的可绘制对象文件
+        /layout
+                    用于定义用户界面布局的 XML 文件
+        /menu
+                    用于定义应用菜单
+        /raw
+                    需以原始形式保存的任意文件
+                    R.raw.filename
+                    Resources.openRawResource()
+        /values
+                    包含字符串、整型数和颜色等简单值的 XML 文件。
+                    /arrays.xml：资源数组
+                    /colors.xml：颜色值。
+                    /dimens.xml：尺寸值。
+                    /strings.xml：字符串值
+                    /styles.xml：样式。
+        /xml
+                    可在运行时通过调用 Resources.getXML() 读取的任意 XML 文件
+        /font
+                    带有扩展名的字体文件（如 .ttf、.otf 或 .ttc），或包含 <font-family> 元素的 XML 文件。如需详细了解作为资源的字体
