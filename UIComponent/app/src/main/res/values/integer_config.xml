@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_value">100</integer>
+    <integer name="min_value">10</integer>
+
+    <integer-array name="gender_range">
+        <item >20</item>
+        <item >30</item>
+        <item >40</item>
+    </integer-array>
+</resources>
+
+    <!--
+    1、定义int数值
+    2、定义inter数组
+    -->

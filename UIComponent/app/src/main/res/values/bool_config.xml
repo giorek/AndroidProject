@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <bool
+        name="bool_name"
+        >[true | false]</bool>-->
+
+    <bool name="bol_focus">true</bool>
+    <bool name="bol_clickable">false</bool>
+</resources>
+<!--
+    定义bool 类型
+    使用res.getBoolean
+    在 Java 中：R.bool.bool_name
+    在 XML 中：@[package:]bool/bool_name
+-->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_name">
+        <item>value</item>
+    </array>
+
+    <array name="custom_colors">
+        <item>#ffff0000</item>
+        <item>#ff00ff00</item>
+        <item>#ff0000ff</item>
+        <item>@color/black</item>
+    </array>
+</resources>
+
+    <!--
+    1、类型化数组
+    2、创建其他资源的数组
+    3、数组不要要求所有资源具有相同类型
+    -->

@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
+
+    <!--
+        定义bool 类型
+        使用res.getDimension
+    -->

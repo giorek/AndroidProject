@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_red">#008</color>
+</resources>
+
+    <!--
+        定义bool 类型
+        使用res.getColor
+    -->

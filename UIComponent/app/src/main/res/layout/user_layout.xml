@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/user_layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:fontFamily="@font/fzltzchj"/>
+
+    <TextView
+        android:id="@+id/user_layout_pwd"
+        android:layout_below="@id/user_layout_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_paw"
+        android:fontFamily="@font/lato_black"/>
+
+    <TextView
+        android:id="@+id/user_layout_gender"
+        android:layout_below="@id/user_layout_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_info"
+        style="@style/CustomText"
+        android:fontFamily="@font/fzlth"
+        android:clickable="@bool/bol_clickable"/>
+</RelativeLayout>

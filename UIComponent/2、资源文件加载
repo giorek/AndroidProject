@@ -1,0 +1,41 @@
+https://developer.android.com/guide/topics/resources/providing-resources?hl=zh-cn
+1、备用资源的目录设置
+    <resource_name>-<config_qualifier>
+        <resource_name> 默认资源的目录名称
+        <config_qualifier> 资源配置限定符名称
+        -   二者之间使用的连接符
+     
+2、资源文件的配置限定符具有一定优先级
+    例如 MCC > 语言和区域 > 布局方向
+        mcc > en >ldrtl
+    MCC > 语言和区域 > 布局方向 > smallestWidth > 可用宽度 > 可用高度 > 屏幕尺寸 > 屏幕纵横比 > 圆形屏幕 > 广色域 .....
+     
+3、实例
+    res/
+        layout/
+            main.xml
+        layout-ar/
+            main.xml
+        layout-ldrtl/
+            main.xml
+    同一个资源目录，依据步骤2中的优先级进行对应目录的查找        
+ 
+ 4、多限定符组合
+    drawable-en-rUS-lan
+    图像-英文-美国-横向  
+    1、排序需要遵循相应规则
+    2、不区分大小写，建议使用小写
+    
+ 5、资源文件访问
+    代码中
+        R.<resource-type>.name  R.string.hello
+    xml中
+        @<resource-type>/name   @string/hello
+    原始文件
+
+        
+    
+    
+    
+        
+    

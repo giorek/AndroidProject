@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">UIComponent</string>
+
+    <!--定义单个字符串-->
+    <string name="user_name">账号</string>
+    <string name="user_paw">密码</string>
+
+    <!--定义字符串数组-->
+    <string-array name="user_gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <plurals name="numOfSound">
+        <item quantity="zero">1</item>
+        <item quantity="two">2</item>
+        <item quantity="few">5</item>
+        <item quantity="many">100</item>
+        <item quantity="other">1000</item>
+    </plurals>
+
+
+    <string name="user_info">这里<annotation font="title_emphasis">使用的</annotation>是Userinfo信息</string>
+
 </resources>
+<!--
+1、定义字符串
+2、定义字符串数组
+-->

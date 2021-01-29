@@ -1,0 +1,5 @@
+1、在/res/目录下创建font目录
+2、将后缀为ttf的字体拷贝到目录/res/font
+3、在/res/font/目录下创建xml文件,随便命名（font_config）
+4、在font_config文件中创建<font-family>为根节点
+5、内部创建<font>节点 
