@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#ffff0000"
+        android:state_pressed="true"/>
+
+    <item android:color="#ff88ffff"
+        android:state_enabled="true"/>
+
+    <item android:color="#ffff8800"/>
+</selector>
+
+<!--
+    1、目录必须在res/color目录下
+    2、selector 必须包含指定命名空间
+-->

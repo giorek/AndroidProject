@@ -21,6 +21,7 @@
 
 
     <string name="user_info">这里<annotation font="title_emphasis">使用的</annotation>是Userinfo信息</string>
+    <string name="user_des">这里是Userinfo信息</string>
 
 </resources>
 <!--
