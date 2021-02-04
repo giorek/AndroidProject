@@ -1,3 +1,4 @@
+include ':uievent'
 include ':loglibrary'
 include ':app'
 rootProject.name = "UIComponent"
