@@ -7,31 +7,39 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.monty.loglibrary.Logger;
+import com.monty.uicomponent.annotation.AnnotationProxy;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-/*        String[] mGender = getResources().getStringArray(R.array.user_gender);
-        for(int i = 0 ;i< mGender.length ;i++){
-            Log.d("TAG"," gender[index] "+mGender[i]);
-        }
-
-
-        String one = getResources().getQuantityString(R.plurals.numOfSound,1);
-        String five = getResources().getQuantityString(R.plurals.numOfSound,5);
-        String oneh = getResources().getQuantityString(R.plurals.numOfSound,100);
-        //Log.d("TAG"," one:"+one +" five:"+five +" oneh:"+oneh);
-        Log.d("TAG"," one:"+one );*/
 
         startMontyActivity();
+        startAnnotation();
     }
 
     private void startMontyActivity(){
-        //Intent intent = new Intent(this,OtherActivity.class);
         Intent intent = new Intent(this,MontyActivity.class);
         startActivity(intent);
+    }
+
+    private void startAnnotation(){
+        Logger.Companion.getInstance().d(TAG,"startAnnotation ");
+        AnnotationProxy annotationProxy = new AnnotationProxy();
+        String keyOne = "haha";
+        String keyTwo = "nihao";
+        annotationProxy.compare(keyOne,keyTwo);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Logger.Companion.getInstance().d(TAG,"startAnnotation in new Thread");
+                AnnotationProxy annotationProxy1 = new AnnotationProxy();
+                String keyOne = "haha";
+                String keyTwo = "nihao";
+                annotationProxy1.compare(keyOne,null);
+            }
+        }).start();
     }
 }
