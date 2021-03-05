@@ -10,9 +10,13 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import com.monty.loglibrary.Logger
 
-class CustomImageView :View {
+/**
+ * 自定义view
+ * 继承自View,
+ */
+class CustomView :View {
     companion object{
-        const val TAG:String = "CustomImageView"
+        const val TAG:String = "CustomView"
     }
     /**
      * 代码中调用时使用
@@ -27,10 +31,10 @@ class CustomImageView :View {
      * 自动调用
      */
     constructor(context: Context,attr:AttributeSet):super(context,attr){
-        var typeArray = context.obtainStyledAttributes(attr,R.styleable.CustomImageView)
-        width = typeArray.getFloat(R.styleable.CustomImageView_customWidth,0f)
-        height = typeArray.getFloat(R.styleable.CustomImageView_customHeight,0f)
-        mColor = typeArray.getColor(R.styleable.CustomImageView_customColor,Color.BLACK)
+        var typeArray = context.obtainStyledAttributes(attr,R.styleable.CustomView)
+        width = typeArray.getFloat(R.styleable.CustomView_customWidth,0f)
+        height = typeArray.getFloat(R.styleable.CustomView_customHeight,0f)
+        mColor = typeArray.getColor(R.styleable.CustomView_customColor,Color.BLACK)
         typeArray.recycle()
         initView()
         Logger.Instance.d(TAG,"constructor width:$width height:$height")
@@ -106,7 +110,7 @@ class CustomImageView :View {
         Logger.Instance.d(TAG,"onDraw {paddingLeft:${paddingLeft} paddingRight:${paddingRight} " +
                 "paddingTop:${paddingTop} paddingBottom:${paddingBottom} } {width:${width} height:${height}}")
 
-        //canvas?.drawRect(paddingLeft.toFloat(), paddingTop.toFloat(), (width+paddingLeft).toFloat(), (height+paddingTop).toFloat(),paint)
+        canvas?.drawRect(paddingLeft.toFloat(), paddingTop.toFloat(), (width+paddingLeft).toFloat(), (height+paddingTop).toFloat(),paint)
 
     }
 }

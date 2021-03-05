@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="600px"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,4 +15,37 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.monty.customview.CustomView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        app:customWidth="100"
+        app:customHeight="100"
+        app:customColor="@android:color/holo_red_light"
+        />
+
+
+    <com.monty.customview.CustomTextView
+        android:id="@+id/custom_text_view"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginTop="300px"/>
+
+    <com.monty.customview.CustomViewGroup
+        android:id="@+id/custom_view_group"
+        android:layout_below="@id/custom_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@android:color/holo_blue_light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一个元素"
+            android:background="@android:color/holo_red_light"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第二个元素"
+            android:background="@android:color/holo_red_light"/>
+    </com.monty.customview.CustomViewGroup>
+</RelativeLayout>
